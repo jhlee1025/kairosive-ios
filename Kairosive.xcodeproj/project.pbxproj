@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4274E141AA264C4001F445F /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4274E131AA264C4001F445F /* KakaoOpenSDK.framework */; };
+		CE1B8CA11895D5FC0039B37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CA01895D5FC0039B37C /* Foundation.framework */; };
+		CE1B8CA31895D5FC0039B37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CA21895D5FC0039B37C /* CoreGraphics.framework */; };
+		CE1B8CA51895D5FC0039B37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CA41895D5FC0039B37C /* UIKit.framework */; };
+		CE1B8CAB1895D5FC0039B37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1B8CA91895D5FC0039B37C /* InfoPlist.strings */; };
+		CE1B8CAD1895D5FC0039B37C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B8CAC1895D5FC0039B37C /* main.m */; };
+		CE1B8CB11895D5FC0039B37C /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B8CB01895D5FC0039B37C /* JCAppDelegate.m */; };
+		CE1B8CB41895D5FC0039B37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1B8CB21895D5FC0039B37C /* Main.storyboard */; };
+		CE1B8CB91895D5FC0039B37C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1B8CB81895D5FC0039B37C /* Images.xcassets */; };
+		CE1B8CC01895D5FC0039B37C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CBF1895D5FC0039B37C /* XCTest.framework */; };
+		CE1B8CC11895D5FC0039B37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CA01895D5FC0039B37C /* Foundation.framework */; };
+		CE1B8CC21895D5FC0039B37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B8CA41895D5FC0039B37C /* UIKit.framework */; };
+		CE1B8CCA1895D5FC0039B37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1B8CC81895D5FC0039B37C /* InfoPlist.strings */; };
+		CE1B8CCC1895D5FC0039B37C /* Kairosive_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B8CCB1895D5FC0039B37C /* Kairosive_DemoTests.m */; };
+		CE1B8CD71895D64E0039B37C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B8CD61895D64E0039B37C /* MainViewController.m */; };
+		CE1B8CDA1895E2320039B37C /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B8CD91895E2320039B37C /* RecordViewController.m */; };
+		CE42A9A2189A8CCC000B064D /* JCDBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CE42A9A1189A8CCC000B064D /* JCDBHandler.m */; };
+		CE42A9A5189A9837000B064D /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE42A9A4189A9837000B064D /* Activity.m */; };
+		CE42A9A7189AC007000B064D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE42A9A6189AC006000B064D /* libsqlite3.dylib */; };
+		CE46136E189BA18C00743635 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46136D189BA18C00743635 /* HistoryViewController.m */; };
+		CE461371189BA66000743635 /* DateSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE461370189BA66000743635 /* DateSelectViewController.m */; };
+		CE461374189C639E00743635 /* ActivityDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE461373189C639E00743635 /* ActivityDetailsViewController.m */; };
+		CE609D6218A0B974000FB75F /* DCKakaoActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE609D5918A0B974000FB75F /* DCKakaoActivity.m */; };
+		CE609D6318A0B974000FB75F /* DCLineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE609D5B18A0B974000FB75F /* DCLineActivity.m */; };
+		CE609D6418A0B974000FB75F /* icon_kakao.png in Resources */ = {isa = PBXBuildFile; fileRef = CE609D5C18A0B974000FB75F /* icon_kakao.png */; };
+		CE609D6518A0B974000FB75F /* icon_kakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE609D5D18A0B974000FB75F /* icon_kakao@2x.png */; };
+		CE609D6618A0B974000FB75F /* icon_line.png in Resources */ = {isa = PBXBuildFile; fileRef = CE609D5E18A0B974000FB75F /* icon_line.png */; };
+		CE609D6718A0B974000FB75F /* icon_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE609D5F18A0B974000FB75F /* icon_line@2x.png */; };
+		CE609D6818A0B974000FB75F /* NSString+DCActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE609D6118A0B974000FB75F /* NSString+DCActivities.m */; };
+		CE9FD8A6189CC08D00C26E25 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FD8A5189CC08D00C26E25 /* TabViewController.m */; };
+		CED6E30C189D8A5400F1EA20 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6E30B189D8A5400F1EA20 /* XYPieChart.m */; };
+		CED6E30E189D8A6000F1EA20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED6E30D189D8A6000F1EA20 /* QuartzCore.framework */; };
+		CED6E311189D8B1200F1EA20 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6E310189D8B1200F1EA20 /* GraphViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE1B8CC31895D5FC0039B37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE1B8C951895D5FB0039B37C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE1B8C9C1895D5FC0039B37C;
+			remoteInfo = "Kairosive Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4274E131AA264C4001F445F /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		CE1B8C9D1895D5FC0039B37C /* Kairosive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kairosive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1B8CA01895D5FC0039B37C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE1B8CA21895D5FC0039B37C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE1B8CA41895D5FC0039B37C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE1B8CA81895D5FC0039B37C /* Kairosive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kairosive-Info.plist"; sourceTree = "<group>"; };
+		CE1B8CAA1895D5FC0039B37C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE1B8CAC1895D5FC0039B37C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE1B8CAE1895D5FC0039B37C /* Kairosive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kairosive-Prefix.pch"; sourceTree = "<group>"; };
+		CE1B8CAF1895D5FC0039B37C /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
+		CE1B8CB01895D5FC0039B37C /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
+		CE1B8CB31895D5FC0039B37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE1B8CB81895D5FC0039B37C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE1B8CBE1895D5FC0039B37C /* KairosiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1B8CBF1895D5FC0039B37C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE1B8CC71895D5FC0039B37C /* KairosiveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KairosiveTests-Info.plist"; sourceTree = "<group>"; };
+		CE1B8CC91895D5FC0039B37C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE1B8CCB1895D5FC0039B37C /* Kairosive_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kairosive_DemoTests.m; sourceTree = "<group>"; };
+		CE1B8CD51895D64E0039B37C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CE1B8CD61895D64E0039B37C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CE1B8CD81895E2320039B37C /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		CE1B8CD91895E2320039B37C /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		CE42A9A0189A8CCC000B064D /* JCDBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDBHandler.h; sourceTree = "<group>"; };
+		CE42A9A1189A8CCC000B064D /* JCDBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDBHandler.m; sourceTree = "<group>"; };
+		CE42A9A3189A9837000B064D /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		CE42A9A4189A9837000B064D /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		CE42A9A6189AC006000B064D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CE46136C189BA18C00743635 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = ../HistoryViewController.h; sourceTree = "<group>"; };
+		CE46136D189BA18C00743635 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = ../HistoryViewController.m; sourceTree = "<group>"; };
+		CE46136F189BA66000743635 /* DateSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSelectViewController.h; sourceTree = "<group>"; };
+		CE461370189BA66000743635 /* DateSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSelectViewController.m; sourceTree = "<group>"; };
+		CE461372189C639E00743635 /* ActivityDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailsViewController.h; sourceTree = "<group>"; };
+		CE461373189C639E00743635 /* ActivityDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailsViewController.m; sourceTree = "<group>"; };
+		CE609D5818A0B974000FB75F /* DCKakaoActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCKakaoActivity.h; sourceTree = "<group>"; };
+		CE609D5918A0B974000FB75F /* DCKakaoActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCKakaoActivity.m; sourceTree = "<group>"; };
+		CE609D5A18A0B974000FB75F /* DCLineActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLineActivity.h; sourceTree = "<group>"; };
+		CE609D5B18A0B974000FB75F /* DCLineActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLineActivity.m; sourceTree = "<group>"; };
+		CE609D5C18A0B974000FB75F /* icon_kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_kakao.png; sourceTree = "<group>"; };
+		CE609D5D18A0B974000FB75F /* icon_kakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_kakao@2x.png"; sourceTree = "<group>"; };
+		CE609D5E18A0B974000FB75F /* icon_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_line.png; sourceTree = "<group>"; };
+		CE609D5F18A0B974000FB75F /* icon_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_line@2x.png"; sourceTree = "<group>"; };
+		CE609D6018A0B974000FB75F /* NSString+DCActivities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCActivities.h"; sourceTree = "<group>"; };
+		CE609D6118A0B974000FB75F /* NSString+DCActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCActivities.m"; sourceTree = "<group>"; };
+		CE9FD8A4189CC08D00C26E25 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		CE9FD8A5189CC08D00C26E25 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		CED6E30A189D8A5400F1EA20 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		CED6E30B189D8A5400F1EA20 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		CED6E30D189D8A6000F1EA20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CED6E30F189D8B1200F1EA20 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphViewController.h; path = ../GraphViewController.h; sourceTree = "<group>"; };
+		CED6E310189D8B1200F1EA20 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphViewController.m; path = ../GraphViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE1B8C9A1895D5FC0039B37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED6E30E189D8A6000F1EA20 /* QuartzCore.framework in Frameworks */,
+				CE42A9A7189AC007000B064D /* libsqlite3.dylib in Frameworks */,
+				CE1B8CA31895D5FC0039B37C /* CoreGraphics.framework in Frameworks */,
+				CE1B8CA51895D5FC0039B37C /* UIKit.framework in Frameworks */,
+				CE1B8CA11895D5FC0039B37C /* Foundation.framework in Frameworks */,
+				A4274E141AA264C4001F445F /* KakaoOpenSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1B8CBB1895D5FC0039B37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1B8CC01895D5FC0039B37C /* XCTest.framework in Frameworks */,
+				CE1B8CC21895D5FC0039B37C /* UIKit.framework in Frameworks */,
+				CE1B8CC11895D5FC0039B37C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE1B8C941895D5FB0039B37C = {
+			isa = PBXGroup;
+			children = (
+				CE609D5718A0B974000FB75F /* source */,
+				CED6E309189D8A5400F1EA20 /* XYPieChart */,
+				CE1B8CA61895D5FC0039B37C /* Kairosive */,
+				CE1B8CC51895D5FC0039B37C /* KairosiveTests */,
+				CE1B8C9F1895D5FC0039B37C /* Frameworks */,
+				CE1B8C9E1895D5FC0039B37C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE1B8C9E1895D5FC0039B37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B8C9D1895D5FC0039B37C /* Kairosive.app */,
+				CE1B8CBE1895D5FC0039B37C /* KairosiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE1B8C9F1895D5FC0039B37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4274E131AA264C4001F445F /* KakaoOpenSDK.framework */,
+				CED6E30D189D8A6000F1EA20 /* QuartzCore.framework */,
+				CE42A9A6189AC006000B064D /* libsqlite3.dylib */,
+				CE1B8CA01895D5FC0039B37C /* Foundation.framework */,
+				CE1B8CA21895D5FC0039B37C /* CoreGraphics.framework */,
+				CE1B8CA41895D5FC0039B37C /* UIKit.framework */,
+				CE1B8CBF1895D5FC0039B37C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1B8CA61895D5FC0039B37C /* Kairosive */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B8CAF1895D5FC0039B37C /* JCAppDelegate.h */,
+				CE1B8CB01895D5FC0039B37C /* JCAppDelegate.m */,
+				CE42A9A0189A8CCC000B064D /* JCDBHandler.h */,
+				CE42A9A1189A8CCC000B064D /* JCDBHandler.m */,
+				CE42A9A3189A9837000B064D /* Activity.h */,
+				CE42A9A4189A9837000B064D /* Activity.m */,
+				CE1B8CD51895D64E0039B37C /* MainViewController.h */,
+				CE1B8CD61895D64E0039B37C /* MainViewController.m */,
+				CE1B8CD81895E2320039B37C /* RecordViewController.h */,
+				CE1B8CD91895E2320039B37C /* RecordViewController.m */,
+				CE46136C189BA18C00743635 /* HistoryViewController.h */,
+				CE46136D189BA18C00743635 /* HistoryViewController.m */,
+				CE46136F189BA66000743635 /* DateSelectViewController.h */,
+				CE461370189BA66000743635 /* DateSelectViewController.m */,
+				CE461372189C639E00743635 /* ActivityDetailsViewController.h */,
+				CE461373189C639E00743635 /* ActivityDetailsViewController.m */,
+				CE9FD8A4189CC08D00C26E25 /* TabViewController.h */,
+				CE9FD8A5189CC08D00C26E25 /* TabViewController.m */,
+				CED6E30F189D8B1200F1EA20 /* GraphViewController.h */,
+				CED6E310189D8B1200F1EA20 /* GraphViewController.m */,
+				CE1B8CB21895D5FC0039B37C /* Main.storyboard */,
+				CE1B8CB81895D5FC0039B37C /* Images.xcassets */,
+				CE1B8CA71895D5FC0039B37C /* Supporting Files */,
+			);
+			path = Kairosive;
+			sourceTree = "<group>";
+		};
+		CE1B8CA71895D5FC0039B37C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B8CA81895D5FC0039B37C /* Kairosive-Info.plist */,
+				CE1B8CA91895D5FC0039B37C /* InfoPlist.strings */,
+				CE1B8CAC1895D5FC0039B37C /* main.m */,
+				CE1B8CAE1895D5FC0039B37C /* Kairosive-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE1B8CC51895D5FC0039B37C /* KairosiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B8CCB1895D5FC0039B37C /* Kairosive_DemoTests.m */,
+				CE1B8CC61895D5FC0039B37C /* Supporting Files */,
+			);
+			path = KairosiveTests;
+			sourceTree = "<group>";
+		};
+		CE1B8CC61895D5FC0039B37C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B8CC71895D5FC0039B37C /* KairosiveTests-Info.plist */,
+				CE1B8CC81895D5FC0039B37C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE609D5718A0B974000FB75F /* source */ = {
+			isa = PBXGroup;
+			children = (
+				CE609D5818A0B974000FB75F /* DCKakaoActivity.h */,
+				CE609D5918A0B974000FB75F /* DCKakaoActivity.m */,
+				CE609D5A18A0B974000FB75F /* DCLineActivity.h */,
+				CE609D5B18A0B974000FB75F /* DCLineActivity.m */,
+				CE609D5C18A0B974000FB75F /* icon_kakao.png */,
+				CE609D5D18A0B974000FB75F /* icon_kakao@2x.png */,
+				CE609D5E18A0B974000FB75F /* icon_line.png */,
+				CE609D5F18A0B974000FB75F /* icon_line@2x.png */,
+				CE609D6018A0B974000FB75F /* NSString+DCActivities.h */,
+				CE609D6118A0B974000FB75F /* NSString+DCActivities.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		CED6E309189D8A5400F1EA20 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				CED6E30A189D8A5400F1EA20 /* XYPieChart.h */,
+				CED6E30B189D8A5400F1EA20 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE1B8C9C1895D5FC0039B37C /* Kairosive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1B8CCF1895D5FC0039B37C /* Build configuration list for PBXNativeTarget "Kairosive" */;
+			buildPhases = (
+				CE1B8C991895D5FC0039B37C /* Sources */,
+				CE1B8C9A1895D5FC0039B37C /* Frameworks */,
+				CE1B8C9B1895D5FC0039B37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kairosive;
+			productName = "Kairosive Demo";
+			productReference = CE1B8C9D1895D5FC0039B37C /* Kairosive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE1B8CBD1895D5FC0039B37C /* KairosiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1B8CD21895D5FC0039B37C /* Build configuration list for PBXNativeTarget "KairosiveTests" */;
+			buildPhases = (
+				CE1B8CBA1895D5FC0039B37C /* Sources */,
+				CE1B8CBB1895D5FC0039B37C /* Frameworks */,
+				CE1B8CBC1895D5FC0039B37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE1B8CC41895D5FC0039B37C /* PBXTargetDependency */,
+			);
+			name = KairosiveTests;
+			productName = "Kairosive DemoTests";
+			productReference = CE1B8CBE1895D5FC0039B37C /* KairosiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE1B8C951895D5FB0039B37C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = JC7;
+				TargetAttributes = {
+					CE1B8C9C1895D5FC0039B37C = {
+						DevelopmentTeam = RACJ99D287;
+					};
+					CE1B8CBD1895D5FC0039B37C = {
+						TestTargetID = CE1B8C9C1895D5FC0039B37C;
+					};
+				};
+			};
+			buildConfigurationList = CE1B8C981895D5FB0039B37C /* Build configuration list for PBXProject "Kairosive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE1B8C941895D5FB0039B37C;
+			productRefGroup = CE1B8C9E1895D5FC0039B37C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE1B8C9C1895D5FC0039B37C /* Kairosive */,
+				CE1B8CBD1895D5FC0039B37C /* KairosiveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE1B8C9B1895D5FC0039B37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE609D6718A0B974000FB75F /* icon_line@2x.png in Resources */,
+				CE609D6418A0B974000FB75F /* icon_kakao.png in Resources */,
+				CE1B8CB91895D5FC0039B37C /* Images.xcassets in Resources */,
+				CE609D6518A0B974000FB75F /* icon_kakao@2x.png in Resources */,
+				CE1B8CAB1895D5FC0039B37C /* InfoPlist.strings in Resources */,
+				CE609D6618A0B974000FB75F /* icon_line.png in Resources */,
+				CE1B8CB41895D5FC0039B37C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1B8CBC1895D5FC0039B37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1B8CCA1895D5FC0039B37C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE1B8C991895D5FC0039B37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE42A9A2189A8CCC000B064D /* JCDBHandler.m in Sources */,
+				CE609D6818A0B974000FB75F /* NSString+DCActivities.m in Sources */,
+				CE609D6218A0B974000FB75F /* DCKakaoActivity.m in Sources */,
+				CE609D6318A0B974000FB75F /* DCLineActivity.m in Sources */,
+				CE1B8CAD1895D5FC0039B37C /* main.m in Sources */,
+				CED6E30C189D8A5400F1EA20 /* XYPieChart.m in Sources */,
+				CE461371189BA66000743635 /* DateSelectViewController.m in Sources */,
+				CE461374189C639E00743635 /* ActivityDetailsViewController.m in Sources */,
+				CED6E311189D8B1200F1EA20 /* GraphViewController.m in Sources */,
+				CE9FD8A6189CC08D00C26E25 /* TabViewController.m in Sources */,
+				CE1B8CD71895D64E0039B37C /* MainViewController.m in Sources */,
+				CE1B8CB11895D5FC0039B37C /* JCAppDelegate.m in Sources */,
+				CE42A9A5189A9837000B064D /* Activity.m in Sources */,
+				CE46136E189BA18C00743635 /* HistoryViewController.m in Sources */,
+				CE1B8CDA1895E2320039B37C /* RecordViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1B8CBA1895D5FC0039B37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1B8CCC1895D5FC0039B37C /* Kairosive_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE1B8CC41895D5FC0039B37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE1B8C9C1895D5FC0039B37C /* Kairosive */;
+			targetProxy = CE1B8CC31895D5FC0039B37C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE1B8CA91895D5FC0039B37C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1B8CAA1895D5FC0039B37C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE1B8CB21895D5FC0039B37C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1B8CB31895D5FC0039B37C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE1B8CC81895D5FC0039B37C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1B8CC91895D5FC0039B37C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE1B8CCD1895D5FC0039B37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE1B8CCE1895D5FC0039B37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE1B8CD01895D5FC0039B37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jaylee/Desktop/Kairosive/iOS/kakao-ios-sdk-1.0.30",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kairosive/Kairosive-Prefix.pch";
+				INFOPLIST_FILE = "Kairosive/Kairosive-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Kairosive;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE1B8CD11895D5FC0039B37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jaylee/Desktop/Kairosive/iOS/kakao-ios-sdk-1.0.30",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kairosive/Kairosive-Prefix.pch";
+				INFOPLIST_FILE = "Kairosive/Kairosive-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Kairosive;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE1B8CD31895D5FC0039B37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kairosive Demo.app/Kairosive Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kairosive Demo/Kairosive Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Kairosive DemoTests/KairosiveTests-Info.plist";
+				PRODUCT_NAME = KairosiveTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CE1B8CD41895D5FC0039B37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kairosive Demo.app/Kairosive Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kairosive Demo/Kairosive Demo-Prefix.pch";
+				INFOPLIST_FILE = "Kairosive DemoTests/KairosiveTests-Info.plist";
+				PRODUCT_NAME = KairosiveTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE1B8C981895D5FB0039B37C /* Build configuration list for PBXProject "Kairosive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1B8CCD1895D5FC0039B37C /* Debug */,
+				CE1B8CCE1895D5FC0039B37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1B8CCF1895D5FC0039B37C /* Build configuration list for PBXNativeTarget "Kairosive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1B8CD01895D5FC0039B37C /* Debug */,
+				CE1B8CD11895D5FC0039B37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1B8CD21895D5FC0039B37C /* Build configuration list for PBXNativeTarget "KairosiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1B8CD31895D5FC0039B37C /* Debug */,
+				CE1B8CD41895D5FC0039B37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE1B8C951895D5FB0039B37C /* Project object */;
+}
